@@ -16,9 +16,9 @@
                      topSpeed:(CGFloat)currentSpeed;
 
 
-@property(nonatomic) CGFloat weight;
+@property(nonatomic,assign) CGFloat weight; //assign or leave it off
 @property(nonatomic) CGFloat topSpeed;
-@property(nonatomic) CGFloat currentSpeed;
+@property(nonatomic, readonly) CGFloat currentSpeed; // add read only so it cant be assinged. 
 @property(nonatomic) CGFloat currentDirection;
 
 -(void)increaseSpeed;

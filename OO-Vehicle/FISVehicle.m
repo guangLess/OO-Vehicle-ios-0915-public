@@ -8,9 +8,19 @@
 
 #import "FISVehicle.h"
 
+@interface FISVehicle ()
+
+@property(nonatomic, readwrite) CGFloat currentSpeed; // pravite
+
+@end
+
+
 @implementation FISVehicle
 
-
+-(instancetype)init{
+    self = [self initWithWeight:0 topSpeed:0];
+    return self;
+}
 
 -(instancetype)initWithWeight:(CGFloat)weight topSpeed:(CGFloat)topSpeed{
     
@@ -31,7 +41,6 @@
 -(void)brake{
     self.currentSpeed = 0;
 }
-
 
 -(void)turnLeft{
     

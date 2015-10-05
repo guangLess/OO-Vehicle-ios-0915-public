@@ -13,7 +13,8 @@
 @implementation FISCar
 
 
-
+//------method one
+/*
 -(instancetype)init{
     
     self = [self initWithWeight:1270 topSpeed:88];
@@ -29,5 +30,30 @@
     
     return  self;
 }
+*/
+
+//-------------- method two
+
+-(instancetype)init{
+    
+    self = [self initWithWeight:1270 topSpeed:88];
+    
+    return self;
+}
+
+-(instancetype)initWithWeight:(CGFloat)weight topSpeed:(CGFloat)currentSpeed{
+    
+    self = [self initWithWeight:weight topSpeed:currentSpeed];
+    
+    if(self){
+        
+        _isAutomatic = YES;
+        _cylinders = 4;
+        
+    }
+    
+    return  self;
+}
+
 
 @end
