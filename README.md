@@ -13,7 +13,7 @@ OO-Vehicle
 
 ###Inheritance
 
-A class can inherit properties and methods (data and behaviors) of another class. A class that inherits is called a '**subclass**' (or child class), and the class that is inherited *from* is called the '**superclass**'. Say it aloud: a subclass inherits from it's superclass. 
+A class can inherit properties and methods (data and behaviors) of another class. A class that inherits is called a '**subclass**' (or child class), and the class that is inherited *from* is called the '**superclass**'. Say it aloud: a subclass inherits from its superclass. 
 
 A subclass can have its own properties and methods in addition to the inherited ones. This is basically the point of inheritance — we have a class that works, but needs to be specialized for certain tasks. So we *subclass* that object, giving it a new name and modifying/adding to it to suit our needs. 
 
@@ -44,7 +44,7 @@ Let's make some classes to represent different vehicles. We'll start by making a
        - *You can choose this when making your new "Cocoa Touch Class" in XCode (see "Subclass of:" below "Class:").*
     - Now a car already has all the properties of a vehicle! It also needs:
        - `isAutomatic` - a `BOOL` property for telling whether a car is automatic (`YES`) or stick (`NO`).
-       - `milesPerGallon` (*yes most vehicles technically have this IRL, but its of particular interest for cars*)
+       - `milesPerGallon` (*yes most vehicles technically have this IRL, but it's of particular interest for cars*)
        - `cylinders` - valid values are `4`, `6` and `8`.
     - A new car object starts with these property values:
       - `weight`: 1270
