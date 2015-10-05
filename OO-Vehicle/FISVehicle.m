@@ -19,29 +19,40 @@
         _weight = weight;
         _topSpeed = topSpeed;
         _currentSpeed = 0;
-        _curretnDirection = 0;
+        _currentDirection = 0;
     }
     return  self;
 }
 
-
-
-
 -(void)increaseSpeed{
     self.currentSpeed = self.topSpeed;
 }
+
 -(void)brake{
     self.currentSpeed = 0;
 }
 
+
 -(void)turnLeft{
-    self.curretnDirection = -90;
+    
+    //self.currentDirection = 270;\
+    //edge case. control + i indenting
+    
+    if (self.currentDirection == 0) {
+        self.currentDirection = 270;
+    } else {
+        self.currentDirection = self.currentDirection - 90;
+    }
 }
 
 -(void)turnRight{
-    self.curretnDirection = +90;
+    
+    if (self.currentDirection == 270) { // == is isEqual to . = mean assign. not equal
+        self.currentDirection = 0;
+    } else {
+    self.currentDirection = self.currentDirection + 90;
+    }
 }
-
 
 
 

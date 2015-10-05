@@ -19,7 +19,7 @@
 @property(nonatomic) CGFloat weight;
 @property(nonatomic) CGFloat topSpeed;
 @property(nonatomic) CGFloat currentSpeed;
-@property(nonatomic) CGFloat curretnDirection;
+@property(nonatomic) CGFloat currentDirection;
 
 -(void)increaseSpeed;
 -(void)brake;

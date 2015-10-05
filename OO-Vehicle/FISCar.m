@@ -7,33 +7,24 @@
 //
 
 #import "FISCar.h"
+#import "FISRaceCar.h"
+
 
 @implementation FISCar
 
-//-(instancetype)init{
-//    
-//    self = [self initWithWeight:1270 topSpeed:88];
-//    
-//    return self;
-//}
 
--(instancetype)initWithWeight:(CGFloat)weight topSpeed:(CGFloat)currentSpeed{
+
+-(instancetype)init{
     
     self = [self initWithWeight:1270 topSpeed:88];
     
-    return self;
-}
-
-
-
--(instancetype)initWithWeight:(CGFloat)weight topSpeed:(CGFloat)topSpeed currentSpeed:(CGFloat)currentSpeed currentDirection:(CGFloat)currentDirection cylinders:(CGFloat)cylinders isAutomatic:(BOOL)isAutomatic{
     
     if (self){
         
-        currentSpeed = 0;
-        currentDirection = 0;
-        cylinders = 4;
-        isAutomatic = YES;
+        self.currentSpeed = 0;
+        self.currentDirection = 0;
+        _cylinders = 4;
+        _isAutomatic = YES;
     }
     
     return  self;
