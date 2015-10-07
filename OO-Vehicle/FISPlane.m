@@ -8,6 +8,7 @@
 
 #import "FISPlane.h"
 
+<<<<<<< HEAD
 @interface FISVehicle ()
 
 @property(nonatomic, readwrite) CGFloat currentSpeed; // pravite
@@ -19,6 +20,16 @@
 -(instancetype)init{
     
     self = [super initWithWeight:255000 topSpeed:614];
+=======
+@implementation FISPlane
+
+
+
+
+-(instancetype)init{
+    
+    self = [self initWithWeight:255000 topSpeed:614];
+>>>>>>> 0806dfcc6d6dd1719f8396892411115fa384abb9
 
     
     if (self) {

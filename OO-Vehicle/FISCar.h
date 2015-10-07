@@ -29,7 +29,11 @@
 */
 
 
+<<<<<<< HEAD
 //+(NSArray *)favoratieBrand;
+=======
++(NSArray *)favoratieBrand;
+>>>>>>> 0806dfcc6d6dd1719f8396892411115fa384abb9
 
 
 @end
