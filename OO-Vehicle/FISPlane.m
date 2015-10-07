@@ -18,7 +18,7 @@
 
 -(instancetype)init{
     
-    self = [self initWithWeight:255000 topSpeed:614];
+    self = [super initWithWeight:255000 topSpeed:614];
 
     
     if (self) {

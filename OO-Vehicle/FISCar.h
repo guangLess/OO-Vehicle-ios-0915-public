@@ -29,7 +29,7 @@
 */
 
 
-+(NSArray *)favoratieBrand;
+//+(NSArray *)favoratieBrand;
 
 
 @end

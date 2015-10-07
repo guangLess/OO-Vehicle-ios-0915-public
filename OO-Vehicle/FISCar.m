@@ -7,7 +7,7 @@
 //
 
 #import "FISCar.h"
-#import "FISRaceCar.h"
+//#import "FISRaceCar.h"
 
 
 @implementation FISCar
@@ -43,7 +43,7 @@
 
 -(instancetype)initWithWeight:(CGFloat)weight topSpeed:(CGFloat)currentSpeed{
     
-    self = [self initWithWeight:weight topSpeed:currentSpeed];
+    self = [super initWithWeight:weight topSpeed:currentSpeed];
     
     if(self){
         
