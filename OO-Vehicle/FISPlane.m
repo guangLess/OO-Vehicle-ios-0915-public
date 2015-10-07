@@ -8,10 +8,13 @@
 
 #import "FISPlane.h"
 
+@interface FISVehicle ()
+
+@property(nonatomic, readwrite) CGFloat currentSpeed; // pravite
+
+@end
+
 @implementation FISPlane
-
-
-
 
 -(instancetype)init{
     
